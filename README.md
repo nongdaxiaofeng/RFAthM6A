@@ -10,6 +10,6 @@ If randomForest is not installed, you can run this command in R:
 
 2. Use well-trained models to predict m6A sites in Arabidopsis thaliana.
 
-1) Prepare exon sequences in fasta format. Below is a sequence in fasta format:
+First, prepare the exon sequence file in fasta format. 
 
 >
