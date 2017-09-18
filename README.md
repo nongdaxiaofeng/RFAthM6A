@@ -2,7 +2,6 @@
 RFAthM6A is a tool for predicting m6A sites in Arabidopsis thaliana.
 
 1. Prerequisites to use RFAthM6A
-
 Python3 is installed in the computer.
 
 R software is installed in the computer.
