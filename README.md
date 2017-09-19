@@ -21,3 +21,7 @@ Run the following command to predict m6A sites by RFPSNSP model and the predicti
 Run the following command to predict m6A sites by RFPSDSP model and the prediction scores are saved to the file 'psdsp_score'.
 
 >Rscript predict_by_psdsp.R test_site psdsp_score
+
+Use the following commands to do the KSNPF encoding and predicting.
+
+>python ks.py test_site 
