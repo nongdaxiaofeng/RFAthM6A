@@ -10,6 +10,12 @@ If randomForest is not installed, you can run this command in R:
 
 2. Use well-trained models to predict m6A sites in Arabidopsis thaliana.
 
-First, prepare the exon sequence file in fasta format and the exon sequence should only contain letters 'A', 'T', 'C' and 'G'. 'test.fasta' is an example file of exon sequences in fasta format.
+We used the file 'test.fasta' as an example to illustrate the prediction process. First, prepare the exon sequence file in fasta format and the exon sequence should only contain letters 'A', 'T', 'C' and 'G'. Run the following command to find 'A's that have the 'RRACH'pattern, which are saved to the file 'test_site'.
 
->
+>python find_site.py test.fasta test_site
+
+Run the following command to predict m6A sites by RFPSNSP model adn the prediction scores are saved to the file 'psnsp_score'.
+
+>Rscript predict_by_psnsp.R test_site psnsp_score
+
+
