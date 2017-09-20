@@ -25,6 +25,12 @@ Run the following command to predict m6A sites by RFPSDSP model and the predicti
 Use the following commands to do the KSNPF encoding and predicting.
 
 >python ks.py test_site test_ks
+
 >Rscript predict_by_ksnpf.R test_ks ksnpf_score
 
 Use the following commands to do the KNF encoding and predicting.
+
+>python knf.py test_site test_knf
+
+>Rscript predict_by_knf.R test_knf knf_score
+
