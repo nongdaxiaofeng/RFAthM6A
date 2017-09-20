@@ -1,0 +1,7 @@
+arg=commandArgs(TRUE)
+library(randomForest)
+load('ksnpf.RData')
+testd1<-read.csv(arg[1],header=F,stringsAsFactors=F)
+colnames(testd1)=paste('V',2:83,sep='')
+pred=predict(ksmodel,testd1[3:ncol(testd1)],type='prob')
+write.table(cbind(testd1[,1:2],pred[,2]),file=arg[2],row.names=F,col.names=F,quote=F,sep='\t')
