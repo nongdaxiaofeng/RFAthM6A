@@ -1,0 +1,5 @@
+arg=commandArgs(TRUE)
+psdsp=read.table(arg[1],stringsAsFactors=F)
+ksnpf=read.table(arg[2],stringsAsFactors=F)
+knf=read.table(arg[3],stringsAsFactors=F)
+write.table(cbind(psdsp[1:2],0.35*psdsp[3]+0.2*ksnpf[3]+0.45*knf[3]),file=arg[4],sep='\t',quote=F,col.names=F,row.names=F)
