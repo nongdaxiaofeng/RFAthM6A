@@ -10,7 +10,7 @@ If randomForest is not installed, you can run this command in R:
 
 2. Use well-trained models to predict m6A sites in Arabidopsis thaliana.
 
-First, prepare the exon sequence file in fasta format and the exon sequence should only contain letters 'A', 'T', 'C' and 'G'. We used the file 'test.fasta' as an example to illustrate the prediction process. Run the following command to find 'A's that have the 'RRACH'pattern, which are saved to the file 'test_site'.
+First, prepare the exon sequence file in fasta format and the exon sequence should only contain letters 'A', 'T', 'C' and 'G'. We used the file 'test.fasta' as an example to illustrate the prediction process. Run the following command to find the 'RRACH' motif, which are saved to the file 'test_site'.
 
 >python find_site.py test.fasta test_site
 
@@ -34,3 +34,6 @@ Use the following commands to do the KNF encoding and predicting.
 
 >Rscript predict_by_knf.R test_knf knf_score
 
+3.Repeat the work of the paper and build your own prediction models
+
+The 'dataset_sourcecode' directory includes the datasets and sourcecodes metioned in the paper "RFAthM6A: a new tool for predicting m6A sites in Arabidopsis thaliana" (unpublished). Making use of the files in the directory, one can repeat the main work in the paper, including feature encoding, 5-fold cross validation and independent test for different methods. This directory also include the rules we extracted from the random forest models. 
