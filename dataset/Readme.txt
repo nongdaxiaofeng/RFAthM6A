@@ -46,4 +46,4 @@ All the commands listed in this file are run in the "dataset" directory.
 >Rscript knf_cv.R
 2)do the independent test and the prediction scores are saved to the file "combine_test_score".
 >Rscript predict_test_combine.R
-8. The rules we extrated from the random forest models are listed in files "psnsp_rule", "psdsp_rule", "ksnpf_rule" and "knf_rule".
+
